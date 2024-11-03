@@ -1,0 +1,32 @@
+### Create new book
+POST {{url}}
+Content-Type: application/json
+
+{
+  "id": 1213,
+  "bookName": "HeadFirst Design Patterns",
+  "authorName": "Eric Freeman, Elisabeth Robson, Bert Bates, Kathy Sierra"
+}
+
+
+### Delete recently created book
+DELETE {{url}}/1213
+Accept: application/json
+
+
+###  Create different book
+POST {{url}}
+Content-Type: application/json
+
+{
+  "id": 1962,
+  "bookName": "Code Complete",
+  "authorName": "Steve McConnell"
+}
+
+
+### Test whether only 1 book present with id 1962.
+GET {{url}}
+Accept: application/json
+
+
