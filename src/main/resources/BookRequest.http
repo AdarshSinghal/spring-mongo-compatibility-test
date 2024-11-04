@@ -28,5 +28,3 @@ Content-Type: application/json
 ### Test whether only 1 book present with id 1962.
 GET {{url}}
 Accept: application/json
-
-
